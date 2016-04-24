@@ -1,5 +1,7 @@
 # AppVeyor::Worker
 
+[![Build status](https://ci.appveyor.com/api/projects/status/oiqm2v8jcr9td1la?svg=true)](https://ci.appveyor.com/project/ukoloff/appveyor-worker)
+
 Access to [AppVeyor](http://www.appveyor.com/)
 [Build Worker API](http://www.appveyor.com/docs/build-worker-api)
 
