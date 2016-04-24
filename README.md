@@ -1,6 +1,7 @@
-# Appveyor::Worker
+# AppVeyor::Worker
 
-Access to AppVeyor Build Worker API
+Access to [AppVeyor](http://www.appveyor.com/)
+[Build Worker API](http://www.appveyor.com/docs/build-worker-api)
 
 ## Installation
 
@@ -22,4 +23,6 @@ Or install it yourself as:
 
 ```ruby
 require 'appveyor/worker'
+
+AppVeyor::Worker.message "Hello, world!", "It's me"
 ```
