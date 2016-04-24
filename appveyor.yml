@@ -29,5 +29,5 @@ after_test:
   - bundle exec rake build
 
 artifacts:
-  - path: pkg/*.tar
+  - path: pkg/*.gem
     name: Gem
