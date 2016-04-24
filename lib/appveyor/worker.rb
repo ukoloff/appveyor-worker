@@ -28,6 +28,17 @@ module AppVeyor::Worker
       'Content-Type'=>'application/json'
   end
 
+  def self.env envs
+    x = api or return
+    envs.each do |k, v|
+      body = JSON.generate name: k, value: v
+      x.post '/api/build/variables',
+        body,
+        'Content-Length'=>body.length.to_s,
+        'Content-Type'=>'application/json'
+    end
+  end
+
   private
 
   def self.api
