@@ -24,3 +24,10 @@ before_test:
 
 test_script:
   - bundle exec rake
+
+after_test:
+  - bundle exec rake Build
+
+artifacts:
+  - path: pkg/*.tar
+    name: Gem
