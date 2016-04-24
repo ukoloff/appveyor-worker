@@ -1,7 +1,5 @@
-require "appveyor/worker/version"
+require_relative "worker/version"
 
-module Appveyor
-  module Worker
+module AppVeyor::Worker
     # Your code goes here...
-  end
 end

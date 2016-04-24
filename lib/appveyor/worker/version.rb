@@ -1,5 +1,5 @@
-module Appveyor
-  module Worker
-    VERSION = "0.1.0"
-  end
+require_relative "../../appveyor"
+
+module AppVeyor::Worker
+  VERSION = "0.1.0"
 end
