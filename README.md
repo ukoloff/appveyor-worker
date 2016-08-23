@@ -11,7 +11,7 @@ Access to [AppVeyor](http://www.appveyor.com/)
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'appveyor-worker'
+gem 'appveyor-worker' # if ENV['APPVEYOR_API_URL']
 ```
 
 And then execute:
@@ -35,3 +35,5 @@ When using `AppVeyor::Worker` under
 the latter automagically requires the former.
 Just add to `Gemfile` et voila! Test results will populate list
 and `AppVeyor::Worker.message` is available in your tests.
+
+In addition, Minitest seed will be sent as AppVeyor message.

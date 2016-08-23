@@ -3,6 +3,7 @@ require_relative '../appveyor/worker'
 
 module Minitest
   def self.plugin_appveyor_init options
+    ::AppVeyor::Worker.message "#{name} seed: #{options[:seed]}"
     self.reporter << AppVeyor.new unless ::AppVeyor::Worker.skip?
   end
 
