@@ -11,7 +11,7 @@ Access to [AppVeyor](http://www.appveyor.com/)
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'appveyor-worker'
+gem 'appveyor-worker' # if ENV['APPVEYOR_API_URL']
 ```
 
 And then execute:
