@@ -35,3 +35,5 @@ When using `AppVeyor::Worker` under
 the latter automagically requires the former.
 Just add to `Gemfile` et voila! Test results will populate list
 and `AppVeyor::Worker.message` is available in your tests.
+
+In addition, Minitest seed will be sent as AppVeyor message.
