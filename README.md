@@ -48,7 +48,7 @@ For [RSpec][] you need *two* lines of code, as mentioned above:
 2. Require gem
 
     * Either directly in one of your `./spec/*_spec.rb` files
-    * Or by adding `-r appveyor/worker` to `./.rspec'
+    * Or by adding `-r appveyor/worker` to `./.rspec`
 
 RScpec seed is also reported as standard AppVeyor message.
 
