@@ -2,6 +2,7 @@ require 'json'
 require 'net/http'
 
 require_relative "worker/version"
+require_relative "worker/rspec" if defined? RSpec
 
 module AppVeyor::Worker
   def self.skip?
