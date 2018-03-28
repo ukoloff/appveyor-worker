@@ -12,10 +12,10 @@ module AppVeyor::Worker::RSpec
       testName: example.full_description,
       fileName: example.location,
       outcome: ({passed: 'Passed', failed: 'Failed', pending: 'Ignored'}[res.status] || '?'),
-      durationMilliseconds: res.run_time*1000
+      durationMilliseconds: res.run_time*1000,
+      ErrorMessage: (example.exception.message rescue nil),
+      ErrorStackTrace: (example.exception.backtrace * "\n" rescue nil)
       #   StdOut: YAML.dump('assertions'=>result.assertions),
-      #   ErrorStackTrace: (result.failure.backtrace * "\n" rescue nil)
-
     true
   end
 
