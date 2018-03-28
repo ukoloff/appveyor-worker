@@ -7,7 +7,7 @@ class TestMeta < Minitest::Test
   end
 
   def test_skip
-    assert Z.respond_to? :skipx?
+    assert Z.respond_to? :skip?
   end
 
   def test_methods
