@@ -4,7 +4,7 @@ RSpec.describe AppVeyor::Worker do
   end
 
   it "sometimes skips" do
-    expect(AppVeyor::Worker.respond_to? :skip?).to be true
+    expect(AppVeyor::Worker.respond_to? :skipx?).to be true
   end
 
   it "provides methods" do
